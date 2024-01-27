@@ -1,0 +1,76 @@
+
+.logo_text{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Montserrat', sans-serif;
+    line-height: 45vw;    
+    color: #fff;
+    text-align: center;
+
+    transition: anim 2s ease-in-out;
+
+    text-decoration: none;
+    text-transform: uppercase;  
+
+  }
+
+  .logo_text a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 45vw;
+    font-weight: 700;
+  }
+
+  .logo_text a:hover{    
+    color: transparent;
+    
+    -webkit-text-stroke: 7px rgb(255, 255, 255,1);
+    background-clip: text;
+  }
+
+  .reversetext{
+    transform: rotateY(-180deg);
+  }
+
+  .modaltextbox{
+    margin-left: 10vw;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap :15vw;
+    font-size: 5vw;
+    max-width: 100%;
+  }
+
+ .logo_text :nth-child(2):hover ~ .modaltextbox :nth-child(2){
+    color: aqua;
+  }
+
+.background-image img{
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+
+    
+} 
+
+.background-image .textbox{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

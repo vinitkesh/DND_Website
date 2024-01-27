@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DND</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./footer.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+          }, false);
+    </script>
+
+    
+    <script>
+        $('.menu-toggle').click(function() {
+            $('.site-nav').toggleClass('site-nav-open', 500);
+            $(this).toggleClass('open');
+        
+          })
+    </script>
+
+    <header>
+        <div class="container">
+    
+            <h1 class="logo">
+                <span id="logo-first">JASON</span>
+                <span id="logo-last">SUTTON</span>
+            </h1>
+    
+            <!-- i elements are for font awesome icons home, info, briefcase, envelope -->
+            <nav class="site-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home site-nav-icon"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-info site-nav-icon"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-briefcase site-nav-icon"></i>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope site-nav-icon"></i>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- Menu btn that toggles onClick and changes appearance ( .menu-toggle CSS ) -->
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+   
+
+    <div class="wrapper">
+        <div class="logo_text">
+            <a class="reversetext" href="/">D</a>
+            <a href="/">N</a>
+            <a href="/">D</a>
+            
+           
+        </div>
+        <div class="modaltextbox">
+            <p class="modaltext">Dance</p>
+            <p class="modaltext">And</p>
+            <p class="modaltext">Dramatics</p>
+        </div>  
+        
+        <div class="background-image">
+            <img src="./assets/background/concert-background-dd0syeox7rmi78l0.jpg" alt="">
+            <div class="textbox">
+                <h1>The dance and Dramatics forum of NIT Calicut</h1>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
