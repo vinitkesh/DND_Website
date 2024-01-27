@@ -11,82 +11,60 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
-    <script>
-        window.addEventListener('scroll', () => {
-            document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-          }, false);
-    </script>
-
-    
-    <script>
-        $('.menu-toggle').click(function() {
-            $('.site-nav').toggleClass('site-nav-open', 500);
-            $(this).toggleClass('open');
-        
-          })
-    </script>
-
-    <header>
-        <div class="container">
-    
-            <h1 class="logo">
-                <span id="logo-first">JASON</span>
-                <span id="logo-last">SUTTON</span>
-            </h1>
-    
-            <!-- i elements are for font awesome icons home, info, briefcase, envelope -->
-            <nav class="site-nav">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-home site-nav-icon"></i>Home</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-info site-nav-icon"></i>About</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-briefcase site-nav-icon"></i>Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-envelope site-nav-icon"></i>Contact</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <!-- Menu btn that toggles onClick and changes appearance ( .menu-toggle CSS ) -->
-            <div class="menu-toggle">
-                <div class="hamburger"></div>
-            </div>
-        </div>
-    </header>
-   
-
-    <div class="wrapper">
-        <div class="logo_text">
-            <a class="reversetext" href="/">D</a>
-            <a href="/">N</a>
-            <a href="/">D</a>
-            
-           
-        </div>
-        <div class="modaltextbox">
-            <p class="modaltext">Dance</p>
-            <p class="modaltext">And</p>
-            <p class="modaltext">Dramatics</p>
-        </div>  
-        
         <div class="background-image">
             <img src="./assets/background/concert-background-dd0syeox7rmi78l0.jpg" alt="">
             <div class="textbox">
                 <h1>The dance and Dramatics forum of NIT Calicut</h1>
             </div>
         </div>
-    </div>
-
+    
+    
+    <link rel="stylesheet" href="./event-box.css">
+    <div class="events">
+        
+          <div class="event event-1">
+            <div class="img-box"><img src="./assets/events/e1.png" alt="Image for card" id="event-img-1"></div>
+            <div class="event-text-box event-text-box-n">
+                <h2>Contest</h2>
+                <h1>Beat Brawl</h1>
+              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non ipsum sagittis, interdum dui eu, euismod sapien. Aliquam erat volutpat. Sed consequat augue in libero vulputate, et aliquam odio suscipit. Integer et commodo metus. Cras vel dui elit.</p>
+              <a href="#" class="event-readmore-btn">Read More</a>
+            </div>
+          </div>
+    
+          <div class="event event-2">
+            <div class="img-box"><img src="./assets/events/e2.png" alt="Image for card" id="event-img-1"></div>
+            <div class="event-text-box event-text-box-n">
+                <h2>Event Type</h2>
+                <h1>Event Name</h1>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non ipsum sagittis, interdum dui eu, euismod sapien. Aliquam erat volutpat. Sed consequat augue in libero vulputate, et aliquam odio suscipit. Integer et commodo metus. Cras vel dui elit.</p>
+              <a href="#" class="event-readmore-btn">Read More</a>
+            </div>
+          </div>
+    
+          
+            <div class="event event-1">
+              <div class="img-box"><img src="./assets/events/e3.png" alt="Image for card" id="event-img-1"></div>
+              <div class="event-text-box event-text-box-n">
+                  <h2>Workshop</h2>
+                  <h1>Event Name</h1>
+                  <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non ipsum sagittis, interdum dui eu, euismod sapien. Aliquam erat volutpat. Sed consequat augue in libero vulputate, et aliquam odio suscipit. Integer et commodo metus. Cras vel dui elit.</p>
+                <a href="#" class="event-readmore-btn">Read More</a>
+              </div>
+            </div>
+      
+            <div class="event event-2">
+              <div class="img-box"><img src="./elements/event/menu2.webp" alt="Image for card" id="event-img-1"></div>
+              <div class="event-text-box event-text-box-n">
+                  <h2>Event Type</h2>
+                  <h1>Event Name</h1>
+                  <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non ipsum sagittis, interdum dui eu, euismod sapien. Aliquam erat volutpat. Sed consequat augue in libero vulputate, et aliquam odio suscipit. Integer et commodo metus. Cras vel dui elit.</p>
+                <a href="#" class="event-readmore-btn">Read More</a>
+              </div>
+            </div>
+          
+    
+        </div>
     
 </body>
 </html>
