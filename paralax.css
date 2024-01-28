@@ -1,0 +1,73 @@
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+  
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 2px;
+    transform-style: preserve-3d;
+ 
+  }
+
+.background-image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(./assets/background/concert-background-dd0syeox7rmi78l0.jpg) center center;
+    background-size: cover;
+  
+    transform: translateZ(-1px) scale(1.6);
+    filter: blur(2px);
+  }
+
+  .events::before{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(./assets/background/music-dance-doodles-icons-sketch-style-design-elements-64479816.webp) top center;
+    background-size: cover;
+  
+    transform: translateZ(-1px) scale(2.2);
+    
+  
+  } 
+
+  .events::before{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(./assets/placeholders/tango.png) top center;
+    background-size: cover;
+
+    transform: translateZ(-1px) scale(2.2);
+    
+
+}
+
+
+
+
+  .background-image {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  .events ,.aboutus{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+
+   

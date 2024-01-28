@@ -1,7 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 2px;
+  transform-style: preserve-3d;
 
-  
-  @keyframes gradient {
-      0% {background-position: 0%}
-      100% {background-position: 100%}
-  }
+  background-color: rgb(57, 34, 0);
+}
