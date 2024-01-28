@@ -6,7 +6,7 @@ website components:
    1. [ ] About us
    2. [x] Events
 2. [ ] Hero section
-   1. [ ] DND: The dance and dramatics 
+   1. [ ] DND: The dance and dramatics forum of 
 3. [ ] About section
 4. [ ] Events section
 5. [ ] Footer

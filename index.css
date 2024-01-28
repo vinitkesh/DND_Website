@@ -1,20 +1,93 @@
-
-
-.wrapper{
-  position: relative;
+html{
+  height: 100vh;
+  overflow: hidden;
 }
 
-.background-image{
-  height: fit-content;
+body{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.background-image::before{
+  content: "";
   width: 100%;
-  
+  height: 100%;
+  position: absolute;
+  background: url(./assets/background/concert-background-dd0syeox7rmi78l0.jpg) center center;
+  background-size: cover;
+
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(2px);
 }
 
-.background-image img{
-    width: 100%;
-    z-index: -1;
-    position: absolute;    
-} 
+
+.background-image , .events{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+
+.background-image > .textbox{
+  position: absolute;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+
+  text-align: center;
+}
+
+.background-image > .textbox > h1{
+  width:65%;
+  height: auto;
+
+  color: black;
+  
+  font-size: 30vw;
+  font-weight: 700;
+  letter-spacing: -2vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 25vw;
+
+  background-color: #fff;
+
+  mix-blend-mode: lighten;
+}
+
+.background-image h1:hover{
+  color: white;
+  background-color: transparent;
+
+  transition: 0.3s ease-in-out;
+}
+
+.background-image > .textbox > h2{
+  text-align: center;
+  font-size: 4.5vw;
+  font-weight: 700;
+  letter-spacing: -0.5vw;
+  word-spacing: 1vw;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+  line-height: 10vw;
+
+  text-shadow: rgb(38, 32, 10) 0px 0px 4px ;
+}
 
 
 
