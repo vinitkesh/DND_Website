@@ -6,6 +6,7 @@
     <title>DND</title>
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./navbaar.css">
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./aboutus.css">
     <link rel="stylesheet" href="./event-box.css">
@@ -18,7 +19,27 @@
 
 
 <body>
+  
 
+
+<nav role="navigation">
+  <div id="menuToggle">
+
+    <input type="checkbox" />
+   
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>Events</li></a>
+      <a href="#"><li>About Us</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="#" target="_blank"><li>Our Team</li></a>
+    </ul>
+  </div>
+</nav>
   
   
     <div class="background-image">
@@ -66,8 +87,14 @@
         </div>
       </div>
 
-      <div class="linkbox">
-        <a href="#"><h1>More events</h1></a>
+      <div class="event event-1">
+        <div class="img-box"><img src="./assets/events/e1.png" alt="Image for card" id="event-img-1"></div>
+        <div class="event-text-box event-text-box-n">
+            <h2>Contest</h2>
+            <h1>Beat Brawl</h1>
+          <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non ipsum sagittis, interdum dui eu, euismod sapien. Aliquam erat volutpat. Sed consequat augue in libero vulputate, et aliquam odio suscipit. Integer et commodo metus. Cras vel dui elit.</p>
+          <a href="#" class="event-readmore-btn">Read More</a>
+        </div>
       </div>
             
     </div>
@@ -106,13 +133,15 @@
 				<p class="footer-links">
 					<a class="link-1" href="#">Home</a>
 
-					<a href="#">Pricing</a>
+          <a href="#">Events</a>
 
-					<a href="#">About</a>
+					<a href="#">About Us</a>
 
-					<a href="#">Faq</a>
+					<a href="#">Contact Us</a>
 
-					<a href="#">Contact</a>
+					<a href="#">Our Team</a>
+
+					
 				</p>
 
 				<p>DND &copy; 2024</p>

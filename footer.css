@@ -10,12 +10,17 @@
   text-align: left;
   font: normal 16px sans-serif;
   padding: 45px 50px;
+
+
+  bottom: 0;
+  perspective: 2px;
 }
 
 .footer-distributed .footer-left p {
-  color: #8f9296;
+  color: #006eff;
   font-size: 14px;
   margin: 0;
+  
 }
 /* Footer links */
 
@@ -61,6 +66,9 @@
   height: 35px;
   background-color: #009dff;
   border-radius: 2px;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
   font-size: 20px;
   color: #ffffff;
   text-align: center;
@@ -69,7 +77,13 @@
   transition:all .25s;
 }
 
-.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+.footer-distributed .footer-right a:hover{
+  transform:scale(1.2); 
+  -webkit-transform:scale(1.2);
+
+  background-color: #006eff;
+
+}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
